@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400;700&family=Bungee+Hairline&family=Comfortaa:wght@300;400&family=Flamenco:wght@300;400&family=Gruppo&family=Major+Mono+Display&family=Megrim&family=Nixie+One&family=Prosto+One&family=Zilla+Slab+Highlight:wght@400;700&display=swap');
 /* Custom properties/variables  */
 :root {
@@ -83,9 +83,13 @@
   }
   
   h1,
-  h2,
-  .contact-section-header > p 
-    {
+  h2 {
+    /*font-family: 'Raleway', 'Montserrat', 'Open Sans', sans-serif;*/
+    font-family: 'Zilla Slab Highlight', 'Bellota Text', 'Megrim', cursive;
+    text-align: center;
+  }
+
+  .contact-section-header > p {
     /*font-family: 'Raleway', 'Montserrat', 'Open Sans', sans-serif;*/
     font-family: 'Zilla Slab Highlight', 'Bellota Text', 'Megrim', cursive;
     text-align: center;

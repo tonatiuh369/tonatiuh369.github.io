@@ -69,7 +69,7 @@
   /* 460px / 16px = 28.75em */
   @media (max-width: 28.75em) {
     html {
-      font-size: 55%;
+      font-size: 52%;
     }
   }
   
@@ -86,18 +86,18 @@
   h1,
   h2 {
     /*font-family: 'Raleway', 'Montserrat', 'Open Sans', sans-serif;*/
-    font-family: 'Zilla Slab Highlight', 'Bellota Text', 'Megrim', cursive;
+    font-family: 'Zilla Slab Highlight', 'Bellota Text', 'Megrim', sans-serif;
     text-align: center;
   }
 
   .contact-section-header > p {
     /*font-family: 'Raleway', 'Montserrat', 'Open Sans', sans-serif;*/
-    font-family: 'Zilla Slab Highlight', 'Bellota Text', 'Megrim', cursive;
+    font-family: 'Zilla Slab Highlight', 'Bellota Text', 'Megrim', sans-serif;
     text-align: center;
   }
   
   h1 {
-    font-size: 6.5rem;
+    font-size: 6.1rem;
     letter-spacing: 0.3rem;
     font-weight: 700;
   }
@@ -177,8 +177,24 @@
     width: 100%;
     height: 100vh;
     background-color: #000;
-    background-image: linear-gradient(60deg, #383c3f 0%, #151416 100%);
+    /* background-image: linear-gradient(60deg, #383c3f 0%, #151416 100%); */
+
+    background: linear-gradient(60deg, #292727, #1a191b, #42474b, #636363);    
+    background-size: 400% 400%;
+    animation: gradient 11s ease infinite;    
   }
+
+  @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
   
   /* .welcome-section .hello h1 {
     display: flex; 
@@ -194,7 +210,7 @@
 
   .welcome-section > p {
     font-family:'Courier New', Courier, monospace;
-    font-size: 3rem;
+    font-size: 2.7rem;
     font-weight: 600;
     /* font-style: italic; 
     color: var(--main-red); */
@@ -219,7 +235,7 @@
   
   .projects-section {
     text-align: center;
-    padding: 7rem 2rem 10rem;
+    padding: 5rem 2rem 10rem;
     /* background: var(--main-blue); */
     background-color:#e5e7e7;
     background-image: linear-gradient(100deg, #ffffff 0%, #e4e2e5 60%);
@@ -231,7 +247,7 @@
     
     color:#18171a;
     max-width: 640px;
-    margin: 1rem auto -0.5rem auto;
+    margin: 3rem auto 1rem auto;
     /* border-bottom: 0.2rem solid var(--main-white); */
   }
   
@@ -344,8 +360,10 @@
     background: var(--main-gray);
     padding: 6rem 0 0;
 
-    background-image: linear-gradient(60deg, #6298da 0%, #1c4d8a 100%);
-
+    /* background-image: linear-gradient(60deg, #6298da 0%, #1c4d8a 100%); */
+    background: linear-gradient(60deg, #3b3b3b, #929da1, #14215e);    
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
   }
 
   /* .contact-section-header > h2 {
@@ -414,12 +432,16 @@
     display: flex;
     justify-content: space-evenly;
     padding: 2rem;
-    /* background: var(--main-gray); */
-    background-image: linear-gradient(60deg, #6298da 0%, #1c4d8a 100%);
     border-top: 2px solid var(--main-red);
   
     flex-direction: column;
     text-align: center; 
+
+    /* background: var(--main-gray); */
+     /* background-image: linear-gradient(60deg, #6298da 0%, #1c4d8a 100%); */
+     background: linear-gradient(30deg, #3b3b3b, #929da1, #14215e);    
+     background-size: 400% 400%;
+     animation: gradient 20s ease infinite;
   }
   
   footer > p {
